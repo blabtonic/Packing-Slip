@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/PDFTest', ['as' => 'PDFTest', 'uses' => 'PackingSlipController@index']);
+Route::get('/simple-pdf', ['as' => 'SimplePDF', 'uses' => 'PackingSlipController@simplePDF']);
